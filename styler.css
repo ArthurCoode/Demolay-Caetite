@@ -1,0 +1,175 @@
+/* Configurações gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Estilo do cabeçalho */
+.article-header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 3px solid #e50914;
+}
+
+.article-header h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #e50914;
+}
+
+.article-meta {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Imagem de destaque */
+.featured-image {
+    margin-top: 20px;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 95vh;
+    border-radius: 4px;
+}
+
+/* Conteúdo do artigo */
+.article-content {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #333;
+}
+
+.article-content p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Rodapé */
+footer {
+    background-color: #e50914;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+/* Estilizando a seta de retorno como um botão */
+.back-arrow {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #e50914; /* Cor do texto */
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid #e50914; /* Contorno vermelho */
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Suaviza a transição de efeitos */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.back-arrow i {
+    margin-right: 8px; /* Espaçamento entre a seta e o texto */
+}
+
+/* Efeito de levantar ao passar o mouse */
+.back-arrow:hover {
+    text-decoration: none; /* Remove sublinhado ao passar o mouse */
+    color: #fff; /* Texto branco ao passar o mouse */
+    background-color: #e50914; /* Fundo vermelho ao passar o mouse */
+    border-color: #e50914; /* Mantém o contorno vermelho */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Elevação mais pronunciada */
+    transform: translateY(-5px); /* Move o botão para cima */
+}
+
+/* Ajustando o cabeçalho para alinhar bem com a seta */
+.article-header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 3px solid #e50914;
+    position: relative;
+}
+
+.article-header h1 {
+    font-size: 32px;
+    margin: 10px 0;
+    color: #e50914;
+}
+
+/* Estilizando a logo no canto superior direito */
+.logo-canto {
+    position: absolute;
+    top: 10px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+    width: 60px; /* Ajuste do tamanho da logo */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para a seção de recomendações */
+#recomendacoes-eventos {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#recomendacoes-eventos h2 {
+    font-size: 28px;
+    color: #6e0000;
+    margin-bottom: 30px;
+}
+
+.eventos-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.evento {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.evento img {
+    width: 100%;
+    border-radius: 8px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.evento h3 {
+    font-size: 18px;
+    color: #6e0000;
+    margin: 15px 0 10px;
+}
+
+.evento p {
+    font-size: 14px;
+    color: #333;
+}
+
+.evento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

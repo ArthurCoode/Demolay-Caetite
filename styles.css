@@ -1,0 +1,183 @@
+/* Zerar as margens e o padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center; /* Centraliza o texto do corpo */
+}
+
+/* Menu de Navegação */
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(143, 0, 0); /* Cor de fundo do menu */
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px; /* Reduz o padding lateral */
+    position: relative;
+    z-index: 10; /* Certifica que o menu ficará acima do vídeo */
+}
+
+nav img {
+    position: absolute;
+    top: 0;
+    right: 20px; /* Ajusta a posição do logo no canto superior direito */
+    width: auto; /* Ajusta a largura automaticamente */
+    height: 60px; /* Ajuste a altura conforme necessário */
+}
+nav .logo {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+/* Estilo do Botão de Voltar */
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #000000; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: fixed; /* Fixa o botão na posição */
+    top: 20px; /* Distância do topo */
+    left: 20px; /* Distância da esquerda */
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+}
+
+.back-button:hover {
+    background-color: #000000; /* Cor de fundo do botão ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação */
+}
+
+.back-button i {
+    margin-right: 8px;
+    font-size: 20px; /* Tamanho do ícone */
+}
+
+/* Seção de Título */
+#titulo-eventos {
+    padding: 40px 20px;
+    background-color: #bbbbbb;
+}
+
+#titulo-eventos h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#titulo-eventos p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Seção de Eventos */
+#eventos {
+    background-color: #dad7d7; /* Cinza claro */
+    padding: 60px 20px; /* Ajusta o padding */
+    text-align: center;
+    margin-top: 0;
+    z-index: 5;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    position: relative; /* Para o posicionamento da logo e seta */
+}
+
+/* Adiciona logo centralizada no meio */
+#eventos .logo-central {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#eventos .logo-central img {
+    width: 120px; /* Ajusta o tamanho da logo */
+    height: auto;
+}
+
+#eventos .events-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#eventos .back-link {
+    color: #8f0000; /* Cor da seta e texto de voltar */
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Espaço entre a seta e o logo */
+}
+
+#eventos .back-link i {
+    margin-right: 10px; /* Espaço entre a seta e o texto */
+}
+
+#eventos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #8f0000; /* Cor do título */
+}
+
+#eventos .eventos-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#eventos .evento {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#eventos .evento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#eventos .evento h2 {
+    font-size: 18px;
+    color: #6e0000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#eventos .evento p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    line-height: 1.4;
+}
+
+#eventos .evento img {
+    width: auto; /* Ajusta a largura automaticamente para manter a proporção */
+    height: 100px; /* Aumente a altura conforme necessário */
+    margin-bottom: 15px;
+    border-radius: 5px; /* Opcional: para bordas arredondadas */
+}
+

@@ -1,0 +1,629 @@
+/* Zerar as margens e o padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu de navegação */
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(143, 0, 0); /* Cor de fundo do menu */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    position: relative;
+    z-index: 10; /* Certifica que o menu ficará acima do vídeo */
+}
+
+nav .logo {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* Estilo do Menu de Navegação */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+    transition: transform 0.3s ease; /* Adiciona transição suave ao efeito de elevação */
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block; /* Garante que a elevação afete o link */
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: black;
+    transform: translateY(-5px); /* Efeito de elevação */
+}
+
+/* Efeito de elevação para itens da lista */
+nav ul li:hover {
+    transform: translateY(-5px); /* Efeito de elevação */
+}
+
+/* Botão de menu para dispositivos móveis */
+nav .menu-btn i {
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+/* Seção de vídeo */
+section.video-section {
+    width: 100%;
+    height: 70vh; /* Ajuste a altura do vídeo */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Cor de fundo para garantir que a área fora do vídeo tenha cor */
+}
+
+section.video-section .background-section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Certifica que o vídeo fica atrás do conteúdo */
+}
+
+section.video-section .background-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.video-section .box {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+/* Seção "Quem Somos" */
+#quem-somos {
+    background-color: #cfcfcf; /* Cinza claro que combina com o esquema de cores do site */
+    padding: 90px 100px;
+    text-align: left;
+    margin-top: 0;
+    z-index: 5;
+    border-radius: 10px; /* Adiciona bordas arredondadas para um toque visual suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave para destacar a seção */
+}
+
+#quem-somos .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#quem-somos .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; /* Espaçamento entre imagem e texto */
+    flex-wrap: wrap;
+}
+
+#quem-somos .texto {
+    flex: 1;
+    margin-right: 20px; /* Adiciona espaço ao redor do texto */
+}
+
+#quem-somos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #8f0000; /* Cor do título */
+}
+
+#quem-somos p {
+    font-size: 20px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+    margin-bottom: 20px;
+    color: black;
+    text-align: justify; /* Justificar o texto para uma melhor aparência */
+}
+
+#quem-somos .imagem {
+    flex: 1;
+    text-align: center;
+}
+
+#quem-somos .imagem img {
+    width: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Ajusta a imagem para a largura disponível do contêiner */
+    height: 100%; /* Mantém a proporção da altura */
+    max-height: auto; /* Define uma altura máxima para a imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Seção "Quem Somos" */
+#quem-somos {
+    background-color: #e0e0e0; /* Cinza claro, um pouco mais escuro */
+    padding: 90px 100px;
+    text-align: left;
+    margin-top: 0;
+    z-index: 5;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Seção "Ações Sociais" */
+#acoes-sociais {
+    background-color: #f9f9f9; /* Cinza muito claro */
+    padding: 90px 100px;
+    text-align: left;
+    margin-top: 0;
+    z-index: 5;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#acoes-sociais .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#acoes-sociais h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #8f0000; /* Cor do título */
+}
+
+#acoes-sociais .content-wrapper {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; /* Espaçamento entre imagem e texto */
+    flex-wrap: wrap;
+}
+
+#acoes-sociais .texto {
+    flex: 1;
+    margin-right: 20px; /* Adiciona espaço ao redor do texto */
+}
+
+#acoes-sociais p {
+    font-size: 20px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+    margin-bottom: 20px;
+    color: black;
+    text-align: justify; /* Justifica o texto para uma melhor aparência */
+}
+
+#acoes-sociais .imagem {
+    flex: 1;
+    text-align: center;
+}
+
+#acoes-sociais .imagem img {
+    width: auto; /* Mantém a proporção da imagem */
+    max-width: auto; /* Ajusta a imagem para a largura disponível do contêiner */
+    height: 45vh; /* Mantém a proporção da altura */
+    max-height: auto; /* Define uma altura máxima para a imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+/* Seção "Eventos" */
+#eventos {
+    background-color: #cfcfcf; /* Cinza muito claro */
+    padding: 90px 100px;
+    text-align: left;
+    margin-top: 0;
+    z-index: 5;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#eventos .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#eventos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #8f0000; /* Cor do título */
+}
+
+#eventos .eventos-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os eventos se movam para a linha seguinte em telas menores */
+    gap: 30px; /* Espaçamento entre eventos */
+}
+
+#eventos .evento {
+    background-color: #ffffff; /* Fundo branco para cada evento */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Garante que o conteúdo não saia dos limites do evento */
+    flex: 1 1 calc(33.333% - 20px); /* Ajusta o tamanho dos eventos em telas maiores, com espaço entre eles */
+    display: flex;
+    flex-direction: column; /* Coloca a imagem em cima e a legenda embaixo */
+}
+
+#eventos .evento-imagem img {
+    width: 100%; /* Ajusta a imagem para a largura disponível do contêiner */
+    height: 40vh; /* Mantém a proporção da imagem */
+}
+
+#eventos .evento-legenda {
+    padding: 15px; /* Espaço ao redor da legenda */
+}
+
+#eventos .evento-legenda h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #8f0000; /* Cor do título do evento */
+}
+
+#eventos .evento-legenda p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#eventos .btn-veja-mais:hover {
+    transform: translateY(-5px); /* Efeito de elevação */
+}
+/* Seção de Contato */
+#contato {
+    background-color: #333333; /* Cor de fundo escura */
+    padding: 30px 50px; /* Reduzido o padding para diminuir a altura da seção */
+    text-align: center;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+    margin-top: 20px;
+    color: white; /* Texto em branco para contraste */
+    position: relative; /* Para posicionamento absoluto dos ícones sociais */
+}
+
+#contato .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contato .logo-header {
+    margin-bottom: 20px; /* Espaço abaixo da logo */
+}
+
+#contato .logo-header img {
+    width: 100px; /* Ajusta o tamanho da logo */
+    height: auto;
+}
+
+#contato .btn-participe {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #400000; /* Cor de fundo do botão */
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#contato .btn-participe:hover {
+    transform: translateY(-5px); /* Efeito de elevação */
+}
+
+
+#contato .btn-participe:hover {
+    background-color: #400000; /* Cor mais escura ao passar o mouse */
+}
+
+#contato .social-icons {
+    margin-top: 30px; /* Espaço acima dos ícones sociais */
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os ícones */
+}
+
+#contato .social-icon img {
+    width: 40px; /* Ajusta o tamanho dos ícones */
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+#contato .social-icon img:hover {
+    opacity: 0.7; /* Efeito de passar o mouse */
+}
+
+#contato .quote {
+    margin-top: 30px;
+    font-size: 18px;
+    font-style: italic;
+    color: #dddddd; /* Cor do texto da citação */
+}
+
+/* Seção de Galeria de Mc'S */
+.gallery-section {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #8f0000; /* Cor do título */
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    width: calc(25% - 20px); /* 4 itens por linha com espaçamento */
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #8f0000;
+}
+
+.gallery-item .name-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.gallery-item .name-container .name {
+    font-size: 16px;
+    margin: 0;
+}
+
+.gallery-item .name-container .name-box {
+    display: inline-block;
+    background-color: #8f0000; /* Cor do quadrado sobre o nome */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Estilo da seção de eventos */
+#eventos {
+    position: relative;
+    padding-bottom: 40px; /* Espaço extra abaixo */
+}
+
+/* Centralizando o botão com Flexbox */
+.btn-veja-mais-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Espaço entre o quadro do Cine DeMolay e o botão */
+    width: 100%; /* Garante que o botão ocupe toda a largura abaixo do quadro */
+}
+
+.btn-veja-mais {
+    background-color: #400000; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Garante que o botão respeite a centralização */
+}
+
+.btn-veja-mais:hover {
+    background-color: #400000; /* Cor ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividade para dispositivos móveis */
+/* Responsividade */
+@media (max-width: 920px) {
+    nav .menu-btn i {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #400000;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+        z-index: 10;
+    }
+
+    nav ul.open {
+        left: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    nav ul li a {
+        font-size: 23px;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: none;
+        color: black;
+    }
+
+    /* Ajuste para a seção "Quem Somos" no mobile */
+    #quem-somos .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #quem-somos .imagem {
+        margin-top: 20px;
+    }
+}
+
+/* Menu de navegação */
+@media (max-width: 768px) {
+    nav {
+        padding: 0 20px; /* Reduz o padding no menu para telas menores */
+    }
+
+    nav .logo {
+        font-size: 30px; /* Diminui o tamanho da fonte da logo */
+    }
+
+    nav ul {
+        top: 80px;
+        left: -100%;
+        background-color: #400000;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+        z-index: 10;
+    }
+
+    nav ul.open {
+        left: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px; /* Ajusta o tamanho da fonte dos itens do menu */
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: none;
+        color: black;
+    }
+}
+
+/* Seção de vídeo */
+section.video-section {
+    height: 40vh; /* Reduz a altura do vídeo para telas menores */
+}
+
+/* Seção "Quem Somos" */
+@media (max-width: 768px) {
+    #quem-somos {
+        padding: 60px 20px; /* Reduz o padding para telas menores */
+    }
+
+    #quem-somos .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #quem-somos .texto {
+        margin-right: 0;
+        margin-bottom: 20px; /* Adiciona espaço abaixo do texto */
+    }
+
+    #quem-somos .imagem img {
+        max-width: 90%; /* Ajusta a largura da imagem para telas menores */
+        height: auto;
+    }
+}
+
+/* Seção "Ações Sociais" */
+@media (max-width: 768px) {
+    #acoes-sociais {
+        padding: 60px 20px; /* Reduz o padding para telas menores */
+    }
+
+    #acoes-sociais .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #acoes-sociais .texto {
+        margin-right: 0;
+        margin-bottom: 20px; /* Adiciona espaço abaixo do texto */
+    }
+
+    #acoes-sociais .imagem img {
+        max-width: 90%; /* Ajusta a largura da imagem para telas menores */
+        height: auto;
+    }
+}
+
+/* Seção "Eventos" */
+@media (max-width: 768px) {
+    #eventos {
+        padding: 60px 20px; /* Reduz o padding para telas menores */
+    }
+
+    #eventos .eventos-wrapper {
+        flex-direction: column;
+        gap: 20px; /* Reduz o espaçamento entre os eventos */
+    }
+
+    #eventos .evento {
+        flex: 1 1 100%; /* Faz os eventos ocuparem toda a largura disponível */
+    }
+
+    #eventos .evento-imagem img {
+        height: auto;
+        max-height: 200px; /* Limita a altura da imagem para telas menores */
+    }
+}
+
+
+
+    html {
+        scroll-behavior: smooth;
+    }    
